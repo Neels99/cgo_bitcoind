@@ -80,8 +80,6 @@ typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;
 extern "C" {
 #endif
 
-extern void Start();
-extern GoInt TestSUM(GoInt a, GoInt b);
 extern struct RES Sum2(struct ARG arg);
 
 #ifdef __cplusplus
