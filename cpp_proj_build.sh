@@ -1,0 +1,1 @@
+g++ main.cpp test.a -o main -lpthread
