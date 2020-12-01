@@ -1,0 +1,3 @@
+F:/repo/cgo_bitcoind/GetBlockChainInfoTest/build/CMakeFiles/edit_cache.dir
+F:/repo/cgo_bitcoind/GetBlockChainInfoTest/build/CMakeFiles/main.dir
+F:/repo/cgo_bitcoind/GetBlockChainInfoTest/build/CMakeFiles/rebuild_cache.dir

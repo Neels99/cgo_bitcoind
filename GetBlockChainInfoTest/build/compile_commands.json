@@ -1,0 +1,7 @@
+[
+{
+  "directory": "F:/repo/cgo_bitcoind/GetBlockChainInfoTest/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\Test_C_GBCI.cpp.obj -c F:\\repo\\cgo_bitcoind\\GetBlockChainInfoTest\\Test_C_GBCI.cpp",
+  "file": "F:/repo/cgo_bitcoind/GetBlockChainInfoTest/Test_C_GBCI.cpp"
+}
+]

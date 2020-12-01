@@ -14,15 +14,10 @@ import (
 	//~ "github.com/btcsuite/btcutil"
 	"log"
 )
-import (
-	"fmt"
-	"time"
-)
 
-func GetBlockChainInfo_T() {
+//export Test
+func Test() {
 	// create new client instance
-	start := time.Now()
-
 	client, err := rpcclient.New(&rpcclient.ConnConfig{
 		HTTPPostMode: true,
 		DisableTLS:   true,
@@ -34,34 +29,15 @@ func GetBlockChainInfo_T() {
 		log.Fatalf("error creating new btc client: %v", err)
 	}
 
-	fmt.Println(time.Since(start))
-	start = time.Now()
-
 	result, err := client.GetBlockChainInfo()
-
-	fmt.Println(time.Since(start))
-	start = time.Now()
-
-	result2, err := client.GetBlockChainInfo()
-	_ = result2
-	fmt.Println(time.Since(start))
-	start = time.Now()
-
-	result3, err := client.GetBlockChainInfo()
-	_ = result3
-	fmt.Println(time.Since(start))
-	start = time.Now()
+	if err != nil {
+		log.Fatalf("error listing accounts: %v", err)
+	}
 	// iterate over accounts (map[string]btcutil.Amount) and write to stdout
 	log.Printf("%s", result)
 }
 
 func main() {
-	GetBlockChainInfo_T()
-	log.Printf("1")
-	GetBlockChainInfo_T()
-	log.Printf("2")
-	GetBlockChainInfo_T()
-	log.Printf("3")
 
 	// list accounts
 	//~ accounts, err := client.ListAccounts()
